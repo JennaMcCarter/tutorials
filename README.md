@@ -1,4 +1,4 @@
-# tutorials
+# Tutorials
 A repository for programming tutorials
 
 
