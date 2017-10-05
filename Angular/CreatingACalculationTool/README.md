@@ -1,2 +1,2 @@
 # Creating a Calculation Tool
-A Angular tutorial
+An Angular tutorial I found on Lynda.com
