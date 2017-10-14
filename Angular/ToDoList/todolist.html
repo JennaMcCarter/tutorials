@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="Stylesheets/style.css">
+	</head>
+	<body>
+		<section ng:controller="controller">
+			<input type="text" ng-model="newItemPlaceholder"  placeholder="Add a new item"/>
+			<div class="subtmitBTN" ng-click="addToList()">Add!</div>
+			<ol ui:sortable="" ng:model="list">
+				<li ng:repeat="task in list" class="item {{task.itemStatus}}">
+					<input value="{{task.item}}">
+					<i class="icon fa js-checkbox fa-check" aria-hidden="true" ng-click="completeItemOnList($index)" ></i>
+					<i class="icon fa fa-trash-o" aria-hidden="true"  ng-click="deleteFromList($index)"></i>
+				</li>
+			</ol>
+			<div id="saveBTN" ng-click="saveList()">
+				<span> Save List</span><br />
+				<span> {{lastSavedDate}} </span>
+			</div>
+		</section>
+		
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://code.angularjs.org/1.0.2/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+		<script type="text/javascript" src="Scripts/js-localStorage.js"> </script>
+		<script type="text/javascript" src="Scripts/todolist.js"> </script>
+		<script type="text/javascript" src="Scripts/sortable.js"> </script>
+		
+	</body>
+</html>

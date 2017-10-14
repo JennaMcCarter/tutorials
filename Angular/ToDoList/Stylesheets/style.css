@@ -1,0 +1,109 @@
+body {
+    align-items: center;
+    background: azure;
+    display: flex;
+}
+
+section {
+    background: #FFF;
+    box-shadow: 1px 1px 15px #9494a7;
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+}
+
+input[type=text] {
+    border: none;
+    line-height: 50px;
+	padding: 0 5%;
+    width: 80%;
+	float: left;
+}
+
+.subtmitBTN {
+	background: lightblue;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+	width: 20%;
+}
+.subtmitBTN:hover{ 
+	background: #00BCD4;
+	cursor: pointer; 
+}
+
+
+ ol {
+   list-style: none;
+ }
+ li {
+   counter-increment: item;
+   margin-bottom: 5px;
+   line-height: 50px;
+ }
+ li:before {
+   margin-right: 10px;
+   content: counter(item);
+   background: lightblue;
+   border-radius: 100%;
+   color: white;
+   width: 50px;
+   text-align: center;
+   display: inline-block;
+ }
+ li:hover { cursor: pointer; }
+
+
+li input{
+	border: none;
+	line-height: 50px;
+	width: 60%;
+}
+li.completed input { text-decoration: line-through; }
+li.completed:before  { background: #00BCD4; }
+
+i.icon {
+	font-size: 50px;
+	line-height: 50px;
+    vertical-align: middle;
+}
+
+i.icon.fa-check {
+    margin-bottom: -6px;
+}
+
+i.icon.fa-check:hover{ color: #4CAF50; }
+i.fa-trash-o:hover{ color: #f44336; }
+
+
+
+#saveBTN{
+	background: lightblue;
+	display: inline-block;
+	padding:25px 0;
+	text-align: center;
+	width: 100%;
+}
+#saveBTN:hover{ cursor: pointer; }
+#saveBTN span:first-child{ font-size: 24px; }
+#saveBTN span:last-child{ font-size: 12px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
