@@ -84,7 +84,7 @@ i.fa-trash-o:hover{ color: #f44336; }
 	text-align: center;
 	width: 100%;
 }
-#saveBTN:hover{ cursor: pointer; }
+#saveBTN:hover{ cursor: pointer; background: #00BCD4; color: #FFF; }
 #saveBTN span:first-child{ font-size: 24px; }
 #saveBTN span:last-child{ font-size: 12px; }
 
