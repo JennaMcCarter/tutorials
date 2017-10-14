@@ -19,10 +19,12 @@ myapp.controller('controller', function ($scope) {
 	}
 	else{
 		$scope.list = [
-					{"itemStatus": "inProgress", "item": "Add item"}, 
-					{"itemStatus": "inProgress", "item": "edit item"}, 
-					{"itemStatus": "completed", "item": "delete item"}, 
-					{"itemStatus": "inProgress", "item": "save items"}];
+					{"itemStatus": "completed", "item": "can add item"}, 
+					{"itemStatus": "completed", "item": "can edit item"}, 
+					{"itemStatus": "completed", "item": "can delete item"}, 
+			                {"itemStatus": "completed", "item": "can mark as complete"},
+			                {"itemStatus": "completed", "item": "can reorder list"},
+					{"itemStatus": "inProgress", "item": "can save items"}];
 	}
 	
 	
